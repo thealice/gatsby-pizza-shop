@@ -5,21 +5,23 @@ export default function Nav() {
     return (
         <nav>
             <ul>
-                <li>
-                    <Link to="/">Home</Link>
-                </li>
-                <li>
-                    <Link to="/beers">Beers</Link>
-                </li>
-                <li>
-                    <Link to="/pizzas">Pizzas</Link>
-                </li>
-                <li>
-                    <Link to="/slicemasters">Slice Masters</Link>
-                </li>
-                <li>
-                    <Link to="/orders">Order Pizza!</Link>
-                </li>
+              <li>
+                <Link to="/">Hot Now</Link>
+              </li>
+              <li>
+                <Link to="/pizzas/">Pizza Menu</Link>
+              </li>
+              <li className="logo-item">
+                <Link to="/">
+                  LOGO
+                </Link>
+              </li>
+              <li>
+                <Link to="/slicemasters">SliceMasters</Link>
+              </li>
+              <li>
+                <Link to="/order">Order Ahead!</Link>
+              </li>
             </ul>
         </nav>
     )
