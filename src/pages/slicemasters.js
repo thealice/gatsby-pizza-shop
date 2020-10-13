@@ -1,10 +1,12 @@
 import React from 'react';
+import Nav from '../components/Nav';
 
 export default function SlicemastersPage() {
   
   return (
     <>
-      I am the slice masters page!
+      <Nav />
+      <p>I am the slice masters page!</p>
     </>
   );
 }
