@@ -1,6 +1,11 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link, navigate } from 'gatsby';
 
+function goToSlicemasters() {
+    setTimeout(() => {
+        navigate('/slicemasters', { replace: true });
+    }, 2000)
+}
 export default function Nav() {
     return (
         <nav>
@@ -15,10 +20,10 @@ export default function Nav() {
                     <Link to="/pizzas">Pizzas</Link>
                 </li>
                 <li>
-                    <Link to="/slicemasters">Slice Masters</Link>
+                    <Link to="/orders">Order Pizza!</Link>
                 </li>
                 <li>
-                    <Link to="/orders">Order Pizza!</Link>
+                <button type="button" onClick={goToSlicemasters}>Slice Masters</button>
                 </li>
             </ul>
         </nav>
