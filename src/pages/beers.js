@@ -1,11 +1,10 @@
 import React from 'react';
-import Nav from '../components/Nav';
+import Layout from '../components/Layout';
 
 export default function BeersPage() {
   return (
-    <>
-      <Nav />
+    <Layout>
       <p>I am the Beers Page!</p>
-    </>
+    </Layout>
   );
 }
